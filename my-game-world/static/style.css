@@ -1,0 +1,179 @@
+body {
+    background-color: #F4F6FF;
+    color: #30294F;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 24px;
+}
+
+header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+h1,
+h2 {
+    font-family: "Press Start 2P", monospace;
+    line-height: 1.7;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+header p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #625C86;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 48px;
+    padding: 32px;
+    border: 3px solid #7770C8;
+    background-color: #E8EDFF;
+    text-align: left;
+}
+
+#tic-tac-toe {
+    background-color: #E8EDFF;
+    border-color: #7770C8;
+}
+
+#memory-cards {
+    background-color: #E8EDFF;
+    border-color: #6597d8;
+}
+
+#coin-clicker {
+    background-color: #F0EBFF;
+    border-color: #9580D5;
+}
+
+section h2 {
+    font-size: 18px;
+}
+
+section p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #625C86;
+}
+
+button {
+    font-family: "Press Start 2P", monospace;
+    font-size: 11px;
+    padding: 18px 24px;
+    border: 3px solid #7770C8;
+    background-color: #7770C8;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5C559F;
+}
+
+section img {
+    width: 300px;
+    height: 270px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+@media (max-width: 700px) {
+    body {
+        padding: 24px 12px;
+    }
+
+    header {
+        margin-bottom: 36px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    section {
+        flex-direction: column;
+        padding: 20px 12px;
+        gap: 20px;
+    }
+
+    section img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    section > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    section h2 {
+        font-size: 14px;
+    }
+
+    #tic-tac-toe-game {
+        width: 100%;
+    }
+    
+    #tic-tac-toe-board {
+        max-width: 270px;
+    }
+}
+
+
+#tic-tac-toe-game {
+    flex: 1;
+    min-width: 0;
+}
+
+#tic-tac-toe-game[hidden] {
+    display: none;
+}
+
+#game-message {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+#tic-tac-toe-board {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+#tic-tac-toe-board .cell {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+    font-size: 30px;
+    line-height: 1;
+    border: 3px solid #7770C8;
+    background-color: #F4F6FF;
+    color: #514A9A;
+}
+
+#tic-tac-toe-board .cell:hover {
+    background-color: #DCE4FF;
+}
+
+#restart-tic-tac-toe {
+    margin-top: 8px;
+}

@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Game World</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>My Game World</h1>
+        <p>Welcome to my little world of games!</p>
+    </header>
+
+    <main>
+
+
+        <section id="tic-tac-toe">
+            <img
+        src="{{ url_for('static', filename='images/Tic-Tac.png') }}"
+        alt="Tic-Tac-Toe game"
+                >
+
+            <div>
+                <h2>Tic-Tac-Toe</h2>
+                <p>Challenge the computer in a Tic-Tac-Toe!</p>
+                <button id="play-tic-tac-toe">Play</button>
+            </div>
+            <div id="tic-tac-toe-game" hidden>
+                <p id="game-message">Your turn! Choose a square.</p>
+                <div id="tic-tac-toe-board">
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                </div>
+                <button id="restart-tic-tac-toe">New Game</button>
+            </div>
+        </section>
+
+
+
+        <section id="memory-cards">
+            <img
+                src="{{ url_for('static', filename='images/Memory.png') }}"
+                alt="Memory Cards game"
+                >
+
+            <div>
+                <h2>Memory</h2>
+                <p>Find all the matching pairs!</p>
+                <button>Play</button>
+            </div>
+            </section>
+
+        <section id="coin-clicker">
+            <img
+                src="{{ url_for('static', filename='images/click!.png') }}"
+                alt="Coin Clicker game"
+                >
+
+            <div>
+                <h2>Clicker!</h2>
+                <p>Collect as many coins as you can!</p>
+                <button>Play</button>
+            </div>
+        </section>
+
+</body>
+</html>
+
