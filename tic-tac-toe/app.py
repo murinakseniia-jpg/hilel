@@ -13,6 +13,7 @@ def check_winner(board):
         if board[a] == board[b] == board[c] != "":
             return board[a]
     if "" not in board:
+    
         return "draw" 
 
 
